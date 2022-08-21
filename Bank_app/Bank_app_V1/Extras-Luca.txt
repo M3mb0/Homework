@@ -1,0 +1,12 @@
+
+                        Banca Titulescu
+
+        Name: Luca
+        City: Brasov 
+
+        Phone: 0766777888
+
+        Account: 60000.0 RON
+
+        Transfer History:
+

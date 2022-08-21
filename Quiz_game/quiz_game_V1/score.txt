@@ -1,0 +1,5 @@
+Name: Cristi, Score: 4
+ Name: Corne, Score: 3
+ Name: Rebeca, Score: 5
+ Name: Mihai, Score: 3
+ 

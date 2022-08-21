@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Bank_app/Bank_app_V1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Bank_app/Bank_app_functions" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Palindrom_checker/check_elements" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Password_check_function/Check_for_characters" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Quiz_game/play_again_function" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Quiz_game/quiz_game_V1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Quiz_game/quiz_game_functions" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

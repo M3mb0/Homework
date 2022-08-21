@@ -1,0 +1,14 @@
+
+                        Banca Titulescu
+
+        Name: Corne
+        City: Buzau 
+
+        Phone: 0733444555
+
+        Account: 26000.0 RON
+
+        Transfer History:
+
+Money received 25000.0 RON 2022-August-01 11:06
+Money received 1000.0 RON 2022-August-20 10:22
