@@ -8,10 +8,14 @@ def cool_sequence():
         try:
             user = int(input('Please enter the length of the list numbers: '))
             user_sequence = int(input('Please enter the length of the sequence you want to check: '))
-            list_of_numbers = [random.randrange(1, 9) for _ in range(user)]
-            print(list_of_numbers)
-            list_combinations(list_of_numbers, user_sequence)
-            break
+            if user_sequence <= user:
+                list_of_numbers = [random.randrange(1, 9) for _ in range(user)]
+                print(list_of_numbers)
+                list_combinations(list_of_numbers, user_sequence)
+                break
+            else:
+                print('The sequence needs to be smaller or equal with the length of the list')
+                continue
         except ValueError:
             print('Please enter numbers only')
 
