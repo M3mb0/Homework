@@ -12,6 +12,8 @@ def cool_sequence():
                 list_of_numbers = [random.randrange(1, 9) for _ in range(user)]
                 print(list_of_numbers)
                 list_combinations(list_of_numbers, user_sequence)
+                print('-' * 40 + 'Version 2' + '-' * 40)
+                cool(list_of_numbers, user_sequence)
                 break
             else:
                 print('The sequence needs to be smaller or equal with the length of the list')
@@ -36,3 +38,12 @@ def list_combinations(my_list, user):
 def not_cool(my_list):
     distinct_elements = [no for no, counter in Counter(my_list).items() if counter == 1]
     print(f'Is not a cool sequence and the number of distinct elements is {len(distinct_elements)}')
+
+
+def cool(my_list, user):
+    lst = [my_list[0:user]]
+    for i in lst:
+        if sorted(i) == list(range(min(i), max(i) + 1)):
+            print(f'This is a cool sequences and the biggest number is {max(i)}')
+        else:
+            not_cool(i)
