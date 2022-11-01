@@ -114,8 +114,8 @@ class User:
             print("Your account has been deactivated")
 
 
-# my_user = User("Cristian", "Ungureanu", "0777666555", "cristian@domain.com")
-# my_user.activate()
+my_user = User("Cristian", "Ungureanu", "0777666555", "cristian@domain.com")
+my_user.activate()
 # my_user.print_user_info()
 # my_user.update_email("ungureanu")
 # my_user.update_phone_no("0799888777")
@@ -174,16 +174,16 @@ class UserManager:
         return User("User", "Name", "0700000000", "email@domain.com")
 
 
-# manager = UserManager()
-# manager.add_user(my_user)
-# manager.get_user_by_email()
-# print(len(manager.user_list))
-# manager.add_user(UserManager.create_default_user())
-# print(len(manager.user_list))
-# manager.get_user_by_email()
-# print(len(manager.user_list))
-# manager.drop_all()
-# print(len(manager.user_list))
+manager = UserManager()
+manager.add_user(my_user)
+manager.get_user_by_email()
+print(len(manager.user_list))
+manager.add_user(UserManager.create_default_user())
+print(len(manager.user_list))
+manager.get_user_by_email()
+print(len(manager.user_list))
+manager.drop_all()
+print(len(manager.user_list))
 
 
 """
@@ -213,7 +213,7 @@ class AirplaneTrip:
 
     def get_duration(self):
         """Return the duration of the trip"""
-        return self.arrival_date_hour - self.departure_date_hour
+        return divmod((self.arrival_date_hour - self.departure_date_hour).total_seconds() / 60, 60)
 
     def get_price_tva(self):
         """Return the price of the trip ith TVA included"""
@@ -239,22 +239,23 @@ Meth:
 
 
 class AirplaneTicket:
-    """AirplaneTicket class defines a ticket and is taking 3 arguments"""
+    """AirplaneTicket class defines a ticket and is taking 4 arguments"""
 
-    def __init__(self, name, type_of_trip, seat):
+    def __init__(self, name, type_of_trip, seat, my_trip):
         self.name = name
         self.type_of_trip = type_of_trip
         self.seat = seat
+        self.trip = my_trip
 
-    def print_ticket(self, my_trip):
+    def print_ticket(self):
         """Prints the user ticket and takes one argument"""
-        print(f"Hello {self.name}.\nYour trip from {my_trip.departure} to {my_trip.arrival} "
+        print(f"Hello {self.name}.\nYour trip from {self.trip.departure} to {self.trip.arrival} "
               f"will depart at "
-              f"{my_trip.departure_date_hour} and you will arrive on {my_trip.arrival_date_hour}.\n"
-              f"The {self.type_of_trip} costs {my_trip.get_price_tva()} RON and it will last for "
-              f"{my_trip.get_duration()}\n"
+              f"{self.trip.departure_date_hour} and you will arrive on {self.trip.arrival_date_hour}.\n"
+              f"The {self.type_of_trip} costs {self.trip.get_price_tva()} RON and it will last for "
+              f"{int(self.trip.get_duration()[0])} hours and {int(self.trip.get_duration()[1])} minutes\n"
               f"Your seat is {self.seat}")
 
 
-ticket = AirplaneTicket("Cristi", "airplane", "C3")
-ticket.print_ticket(trip)
+ticket = AirplaneTicket("Cristi", "airplane", "C3", trip)
+ticket.print_ticket()
