@@ -1,5 +1,5 @@
 """"A script who can move files from a folder to another on a given location.
-The location is read form config.txt file"""
+The location is read form config.txt f"""
 
 from pathlib import Path
 from datetime import datetime

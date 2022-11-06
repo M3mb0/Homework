@@ -52,8 +52,8 @@ class Notebook:
 #     if my_agenda.no_of_writen_pages() > my_agenda.no_of_pages:
 #         break
 # print(my_agenda.content)
-# print(f'The number of writen pages is {my_agenda.no_of_writen_pages()}')
-# print(f'The number of empty pages is {my_agenda.no_of_empty_pages()}')
+# print(fout'The number of writen pages is {my_agenda.no_of_writen_pages()}')
+# print(fout'The number of empty pages is {my_agenda.no_of_empty_pages()}')
 
 """
 Scrie o clasa care repr. un Utilizator

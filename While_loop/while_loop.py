@@ -6,7 +6,7 @@ while x < 5:
     print("Salutare")
     x += 1
 
-# Print every letter from the my_string_vowels "Hello" on a new line except for "e" and "o" using wille loops.
+# Print every letter from the my_string_vowels "Hello" on a new income except for "e" and "o" using wille loops.
 
 my_string = "Helloaeorroem"
 x = 0
@@ -18,7 +18,7 @@ while x < len(my_string):
     print(my_string[x])
     x += 1
 
-# Print the letters from the my_string_vowels "Hello" on a new line until we find the letter "l" then stop printing
+# Print the letters from the my_string_vowels "Hello" on a new income until we find the letter "l" then stop printing
 
 my_string = "Hello"
 x = 0
