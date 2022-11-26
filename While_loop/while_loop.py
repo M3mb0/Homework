@@ -57,7 +57,7 @@ while x < len(fruitlist):
     print(pop_fruits)
 x += 1
 
-# Printing the items in a tuple using while loop
+# Printing the ele in a tuple using while loop
 
 my_tuple = ("Fruits", "Vegetables", "Healt", "Happiness")
 x = 0
