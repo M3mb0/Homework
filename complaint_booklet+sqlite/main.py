@@ -1,3 +1,7 @@
+"""The main script which is reading , inserting and modifies the data from the table created with the help
+ of Database class"""
+
+
 import sqlite3
 from datetime import datetime
 
