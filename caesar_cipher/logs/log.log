@@ -1,0 +1,4 @@
+2022-12-15 22:15:32,883 INFO line:  76 The file my_text.txt will be encrypted
+2022-12-15 22:15:32,883 INFO line:  84 In encrypted.txt file you will find the encrypted message
+2022-12-15 22:16:40,762 INFO line:  87 The file encrypted.txt will be decrypted
+2022-12-15 22:16:40,762 INFO line:  96 In decrypted.txt file you will find the decrypted message

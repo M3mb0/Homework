@@ -1,0 +1,10 @@
+Download the file and read it over to get a feel for how it works. DON'T EXECUTE IT YET.
+
+Once you have read the file, trace its execution for each of the invocations below. For each one, write exactly what will be printed to the terminal on a separate sheet of paper. Once you are satisfied with your prediction, go ahead and run the script with the indicated arguments.
+
+Keep in mind that exception handling in Python (as in Java) respects the exception class hierarchy. For example, the following exception block will be triggered if the exception type is SomeError or any subclass of SomeError.
+
+try:
+    dangerous_function()
+except SomeError:
+    print("Error encountered!")
